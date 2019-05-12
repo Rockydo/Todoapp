@@ -6,15 +6,19 @@ import { AppComponent } from './app.component';
 
 import { TodoListComponent } from './todo-list.component';
 import { TodoService } from './todo.service';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TodoListComponent
+    TodoListComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,                               
+    ReactiveFormsModule 
   ],
   providers: [TodoService],
   bootstrap: [AppComponent]
